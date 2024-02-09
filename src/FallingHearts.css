@@ -1,0 +1,30 @@
+/* FallingHearts.css */
+.falling-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    animation: fall 5s linear infinite; /* Adjust the animation duration */
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-20px); /* Start and end position off-screen */
+    }
+    100% {
+        transform: translateY(100vh);
+       
+        display: none;
+      }
+  }
+  

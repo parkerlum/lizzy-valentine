@@ -1,0 +1,18 @@
+.keyboard {
+    display: flex;
+    flex-direction: column; /* Display rows vertically */
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
