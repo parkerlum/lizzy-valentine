@@ -32,7 +32,7 @@ const makeGuess = (gameState, letter) => {
 };
 
 const isGameOver = (gameState) => {
-    const { secretWord, guessedLetters, incorrectGuesses } = gameState;
+    const { incorrectGuesses } = gameState;
   
     if (didPlayerWin(gameState)) {
       return true; 
